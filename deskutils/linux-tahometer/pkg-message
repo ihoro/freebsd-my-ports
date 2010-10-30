@@ -1,0 +1,6 @@
+Please, note that tahometer's built-in update mechanism was turned off.
+You can update tahometer via ports sub-system as usually. The reason is
+that some updates are forced, i.e. tahometer doesn't work until you
+accept updating. And without root access you cannot do that. Also, it
+means that you cannot use 'portable version' option, which simply means
+to keep your settings/data near the executable itself.

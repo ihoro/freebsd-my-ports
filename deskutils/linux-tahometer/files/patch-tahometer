@@ -1,0 +1,8 @@
+--- ./tahometer.orig	2010-08-02 11:17:11.000000000 +0300
++++ ./tahometer	2010-11-09 01:02:42.000000000 +0200
+@@ -1,4 +1,4 @@
+ #!/bin/sh
+ 
+ cd ${0%/*}
+-exec env LD_PRELOAD=./libQtCore.so.4:./libQtGui.so.4:./libQtNetwork.so.4:./libQtXml.so.4:./libQxtCore.so.0:./libQxtGui.so.0 ./tahometer-bin
++exec env LD_PRELOAD=/compat/linux/lib/librt.so.1:./libQtCore.so.4:./libQtGui.so.4:./libQtNetwork.so.4:./libQtXml.so.4:./libQxtCore.so.0:./libQxtGui.so.0 ./tahometer-bin

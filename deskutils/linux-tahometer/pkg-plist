@@ -1,0 +1,12 @@
+bin/linux-tahometer
+%%TAHOMETER_DIR%%/desktop_icon.svg
+%%TAHOMETER_DIR%%/libQtCore.so.4
+%%TAHOMETER_DIR%%/libQtGui.so.4
+%%TAHOMETER_DIR%%/libQtNetwork.so.4
+%%TAHOMETER_DIR%%/libQtXml.so.4
+%%TAHOMETER_DIR%%/libQxtCore.so.0
+%%TAHOMETER_DIR%%/libQxtGui.so.0
+%%TAHOMETER_DIR%%/tahometer
+%%TAHOMETER_DIR%%/tahometer-bin
+%%TAHOMETER_DIR%%/tahometer_ru.qm
+@dirrm %%TAHOMETER_DIR%%
