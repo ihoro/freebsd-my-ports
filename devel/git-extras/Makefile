@@ -3,7 +3,6 @@
 PORTNAME=	git-extras
 PORTVERSION=	2.1.0
 CATEGORIES=	devel
-MASTER_SITES=	GH
 
 MAINTAINER=	igor.ostapenko@gmail.com
 COMMENT=	Sub-commands for repo summary, repl, changelog population, and more
