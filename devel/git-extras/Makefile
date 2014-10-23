@@ -10,6 +10,9 @@ COMMENT=	Sub-commands for repo summary, repl, changelog population, and more
 
 LICENSE=	MIT
 
+RUN_DEPENDS=	git:${PORTSDIR}/devel/git \
+		bash:${PORTSDIR}/shells/bash
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	tj
 GH_TAGNAME=	v2.1.0
@@ -20,8 +23,5 @@ USES+=		gmake
 
 USES+=		shebangfix
 SHEBANG_FILES=	bin/git-*
-
-RUN_DEPENDS=	git:${PORTSDIR}/devel/git \
-		bash:${PORTSDIR}/shells/bash
 
 .include <bsd.port.mk>
