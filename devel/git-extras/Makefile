@@ -21,6 +21,7 @@ USES+=		gmake
 USES+=		shebangfix
 SHEBANG_FILES=	bin/git-*
 
-# TODO: git-squash needs bash, let's add bash dep? or it may work with /bin/sh?
+RUN_DEPENDS=	git:${PORTSDIR}/devel/git \
+		bash:${PORTSDIR}/shells/bash
 
 .include <bsd.port.mk>
