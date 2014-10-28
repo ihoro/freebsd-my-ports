@@ -1,0 +1,13 @@
+bin/slim2nd
+%%DATADIR%%/themes/default/background.jpg
+%%DATADIR%%/themes/default/panel.png
+%%DATADIR%%/themes/default/slim2nd.theme
+@dirrm %%DATADIR%%/themes/default
+@dirrmtry %%DATADIR%%/themes
+@dirrmtry %%DATADIR%%
+@unexec if cmp -s %D/etc/slim2nd.conf.sample %D/etc/slim2nd.conf; then rm -f %D/etc/slim2nd.conf; fi
+etc/slim2nd.conf.sample
+@exec if [ ! -f %D/etc/slim2nd.conf ] ; then cp -p %D/%F %B/slim2nd.conf; fi
+%%PAM%%@unexec if cmp -s %D/etc/pam.d/slim2nd.default %D/etc/pam.d/slim2nd; then rm -f %D/etc/pam.d/slim2nd ; fi
+%%PAM%%etc/pam.d/slim2nd.default
+%%PAM%%@exec if [ ! -f %D/etc/pam.d/slim2nd ] ; then cp -p %D/%F %B/slim2nd; fi

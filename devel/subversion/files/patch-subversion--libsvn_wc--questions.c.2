@@ -1,0 +1,12 @@
+--- subversion/libsvn_wc/questions.c.orig	2010-03-31 01:12:09.000000000 +0300
++++ subversion/libsvn_wc/questions.c	2010-03-31 01:25:51.000000000 +0300
+@@ -108,7 +108,8 @@
+     }
+ 
+   if (err && (APR_STATUS_IS_ENOENT(err->apr_err)
+-              || APR_STATUS_IS_ENOTDIR(err->apr_err)))
++              || APR_STATUS_IS_ENOTDIR(err->apr_err)
++	      || SOCEACCES == err->apr_err))
+     {
+       svn_node_kind_t kind;
+ 
