@@ -21,6 +21,6 @@ NO_BUILD=	yes
 USES+=		gmake
 
 USES+=		shebangfix
-SHEBANG_FILES=	bin/git-*
+SHEBANG_FILES=	bin/git-squash
 
 .include <bsd.port.mk>
