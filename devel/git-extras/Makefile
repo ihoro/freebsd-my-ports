@@ -14,13 +14,12 @@ RUN_DEPENDS=	git:${PORTSDIR}/devel/git \
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	tj
-GH_TAGNAME=	v2.1.0
+GH_TAGNAME=	v${PORTVERSION}
 GH_COMMIT=	28f0ad8
 
-NO_BUILD=	yes
-USES+=		gmake
-
-USES+=		shebangfix
+USES=		gmake shebangfix
 SHEBANG_FILES=	bin/git-squash
+
+NO_BUILD=	yes
 
 .include <bsd.port.mk>
