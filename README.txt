@@ -5,6 +5,7 @@ Development:
   make makesum
   make makeplist
   make maintainer
+  make makepatch
 
 Preparing patch:
   cd git-extras
@@ -29,5 +30,6 @@ Checking/testing:
   pkg add <package-name>
   make package (as user)
 
+https://www.freebsd.org/doc/en_US.ISO8859-1/books/porters-handbook/index.html
 https://www.freebsd.org/doc/en_US.ISO8859-1/books/porters-handbook/testing.html
 
