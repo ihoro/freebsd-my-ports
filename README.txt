@@ -9,7 +9,7 @@ Development:
 
 Preparing patch:
   cd git-extras
-  git diff > ../a.diff
+  git diff --staged > ../a.diff 
   cd ..
   svn co svn://svn.freebsd.org/ports/head/devel/git-extras git-extras.orig
   cd git-extras.orig
