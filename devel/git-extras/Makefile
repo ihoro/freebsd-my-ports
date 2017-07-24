@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	git-extras
-PORTVERSION=	4.3.0
+PORTVERSION=	4.4.0
 CATEGORIES=	devel
 
 MAINTAINER=	igor.ostapenko@gmail.com
@@ -12,10 +12,10 @@ LICENSE=	MIT
 RUN_DEPENDS=	git:devel/git \
 		bash:shells/bash
 
+USES=		gmake
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	tj
-
-USES=		gmake
 
 NO_BUILD=	yes
 
