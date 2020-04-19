@@ -31,6 +31,8 @@ Preparing patch:
   svn diff | less
   svn diff > ../`make -VPKGNAME`.diff
 
-https://www.freebsd.org/doc/en_US.ISO8859-1/books/porters-handbook/index.html
-https://www.freebsd.org/doc/en_US.ISO8859-1/books/porters-handbook/testing.html
-
+References:
+  - https://www.freebsd.org/doc/en_US.ISO8859-1/books/porters-handbook/index.html
+  - https://www.freebsd.org/doc/en_US.ISO8859-1/books/porters-handbook/testing.html
+  - "Introduction to FreeBSD Ports - 25 years and counting" - Ben Woods (LCA 2020)
+    https://www.youtube.com/watch?v=zj_GXPHLyGw
