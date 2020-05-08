@@ -36,3 +36,6 @@ References:
   - https://www.freebsd.org/doc/en_US.ISO8859-1/books/porters-handbook/testing.html
   - "Introduction to FreeBSD Ports - 25 years and counting" - Ben Woods (LCA 2020)
     https://www.youtube.com/watch?v=zj_GXPHLyGw
+
+My PRs quick link:
+https://bugs.freebsd.org/bugzilla/buglist.cgi?field0-0-0=reporter&no_redirect=1&order=changeddate%2Cbug_status%2Cpriority%2Cassigned_to%2Cbug_id&query_format=advanced&type0-0-0=substring&value0-0-0=igor.ostapenko
