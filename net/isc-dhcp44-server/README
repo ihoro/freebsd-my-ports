@@ -1,0 +1,23 @@
+TODO: there is also an issue with schg flag, see notes below.
+
+Reproduce:
+- install FreeBSD 13.0-RELEASE
+- pkg install isc-dhcp44-server
+- configure etc/rc.conf to enable it with chroot (see pkg install output)
+  - set ifaces to em0 or something
+- configure /usr/local/etc/dhcpd.conf to align subnet with em0 inet
+- chflags schg /etc/resolv.conf
+- service isc-dhcpd start
+- FAILED:
+
+/usr/local/etc/rc.d/isc-dhcpd: ERROR: unable to copy /etc/host.conf to /var/db/dhcpd/etc/host.conf -- not a file or a directory
+
+
+reproduce 2:
+- install 13 with defaults
+- the rest the same
+
+Use case:
+- local_unbound is enabled and dhclient are used as the same time, and "chflags schg /etc/resolv.conf" is used
+
+officially: chflags schg /etc/resolv.conf is used
