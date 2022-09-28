@@ -10,6 +10,7 @@ Development:
 Checking/testing:
   portlint
   portlint -A
+  ports-mgmt/portfmt: portfmt, portclippy, portedit
   make stage (implies stage-qa)
   make check-plist
   make check-orphans
