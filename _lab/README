@@ -1,0 +1,22 @@
+PORTS LAB SETUP
+
+- brew install qemu
+
+- consider the guide of running FreeBSD @ qemu @ M1: https://gist.github.com/ctsrc/a1f57933a2cde9abc0f07be12889f97f
+  - tar xvf ~/Downloads/QEMU_EFI-cb438b9-edk2-stable202011-with-extra-resolutions.tar.gz
+  - dd if=/dev/zero of=pflash0.img bs=1m count=64
+  - dd if=/dev/zero of=pflash1.img bs=1m count=64
+  - dd if=QEMU_EFI.fd of=pflash0.img conv=notrunc
+  - dd if=QEMU_VARS.fd of=pflash1.img conv=notrunc
+
+- fetch raw image of CURRENT, e.g. https://download.freebsd.org/snapshots/VM-IMAGES/14.0-CURRENT/aarch64/Latest/FreeBSD-14.0-CURRENT-arm64-aarch64.raw.xz
+- resize it, e.g.: qemu-img resize -f raw FreeBSD-14.0-CURRENT-arm64-aarch64.raw +20G
+
+- the first run and basic preparations:
+  - ./run.sh
+  - echo 'kern.hz=100' >> /boot/loader.conf (decrease CPU load as a guest, see https://docs.freebsd.org/en/books/handbook/virtualization/)
+  - reboot
+  - pkg install git
+  - git clone https://git.freebsd.org/ports.git /usr/ports
+  - see root README for things like $( echo 'DEVELOPER=yes' >> /etc/make.conf )
+
