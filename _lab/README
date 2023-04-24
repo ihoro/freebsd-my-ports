@@ -20,3 +20,16 @@ PORTS LAB SETUP
   - git clone https://git.freebsd.org/ports.git /usr/ports
   - see root README for things like $( echo 'DEVELOPER=yes' >> /etc/make.conf )
 
+- add some conveniences:
+  - tmux
+    - vm# pkg install tmux
+    - bring in my vm:/root/.tmux.conf
+  - ssh
+    - vm# echo 'PermitRootLogin yes' >> /etc/ssh/sshd_config
+    - vm# sysrc sshd_enable=yes
+    - vm# sysrc hostname=portslab
+    - vm# service sshd start
+    - muspel: prepare the respective ssh keys and update .ssh/config
+    - add muspel:~/.ssh/root_portslab.qemu_rsa.pub to vm:/root/.ssh/authorized_keys
+    - host$ ssh portslab
+
