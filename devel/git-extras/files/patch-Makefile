@@ -1,16 +1,17 @@
---- Makefile.orig	2023-04-24 17:16:52 UTC
+--- Makefile.orig	2023-04-25 12:19:36 UTC
 +++ Makefile
-@@ -8,11 +8,13 @@ endif
+@@ -4,11 +4,13 @@ ifeq ($(OS), FreeBSD)
+ 
+ OS = $(shell uname)
+ ifeq ($(OS), FreeBSD)
+-	MANPREFIX ?= "$(PREFIX)/man/man1"
++	MANPREFIX = "$(PREFIX)/man/man1"
  else
  	MANPREFIX ?= "$(PREFIX)/share/man/man1"
  endif
-+MANPREFIX = "$(PREFIX)/man/man1"
  ifeq ($(OS), Darwin)
++	COMPL_DIR ?= "$(DESTDIR)$(SYSCONFDIR)/bash_completion.d"
++else ifeq ($(OS), FreeBSD)
  	COMPL_DIR ?= "$(DESTDIR)$(SYSCONFDIR)/bash_completion.d"
  else
  	COMPL_DIR ?= "$(DESTDIR)$(SYSCONFDIR)/bash-completion/completions"
- endif
-+COMPL_DIR = "$(DESTDIR)$(PREFIX)/share/bash-completion/completions"
- 
- SYSCONFDIR ?= $(PREFIX)/etc
- BINS = $(wildcard bin/git-*)
