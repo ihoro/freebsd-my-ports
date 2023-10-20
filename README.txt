@@ -43,3 +43,6 @@ https://bugs.freebsd.org/bugzilla/buglist.cgi?field0-0-0=commenter&no_redirect=1
 
 My GitHub PR activity:
 https://github.com/freebsd/freebsd-src/pulls?q=is%3Apr+author%3Aihoro+
+
+My reviews.freebsd.org activity:
+https://reviews.freebsd.org/search/query/SP1RelfnmVUj/
