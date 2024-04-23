@@ -36,6 +36,7 @@ FreeBSD ports lab
     User root
     IdentityFile ~/.ssh/root_portslab.qemu_rsa
     IdentitiesOnly yes
+    StrictHostKeyChecking no
 - test it:
   - $ service sshd start
   - macos$ ssh portslab
