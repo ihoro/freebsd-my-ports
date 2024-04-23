@@ -1,5 +1,5 @@
 PORTNAME=	git-extras
-PORTVERSION=	7.1.0
+DISTVERSION=	7.2.0
 CATEGORIES=	devel
 
 MAINTAINER=	igor.ostapenko@pm.me
@@ -13,6 +13,8 @@ RUN_DEPENDS=	bash:shells/bash \
 		git:devel/git
 
 USES=		gmake
+
+MAKE_ARGS=	MANPREFIX=${PREFIX}/share/man/man1
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	tj
