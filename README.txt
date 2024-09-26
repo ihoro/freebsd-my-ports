@@ -39,7 +39,7 @@ References:
     https://www.youtube.com/watch?v=zj_GXPHLyGw
 
 My bugs.freebsd.org activity:
-https://bugs.freebsd.org/bugzilla/buglist.cgi?field0-0-0=commenter&no_redirect=1&order=changeddate%2Cbug_status%2Cpriority%2Cassigned_to%2Cbug_id&query_format=advanced&type0-0-0=substring&value0-0-0=igor.ostapenko
+https://bugs.freebsd.org/bugzilla/buglist.cgi?field0-0-0=commenter&no_redirect=1&order=changeddate%2Cbug_status%2Cpriority%2Cassigned_to%2Cbug_id&query_format=advanced&type0-0-0=substring&value0-0-0=igoro
 
 My GitHub PR activity:
 https://github.com/freebsd/freebsd-src/pulls?q=is%3Apr+author%3Aihoro+
