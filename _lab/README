@@ -1,6 +1,27 @@
 FreeBSD ports lab
 
 
+0 AUTOMATIC SETUP
+-----------------
+
+Provided we have d1_usrports disk left prepared from the previous setup.
+
+
+0.1 Root disk
+
+- fetch an official VM image of -RELEASE branch
+    - e.g. https://download.freebsd.org/releases/VM-IMAGES/14.1-RELEASE/aarch64/Latest/FreeBSD-14.1-RELEASE-arm64-aarch64-ufs.qcow2.xz
+- macos$ ln -s FreeBSD-14.1-RELEASE-arm64-aarch64-ufs.qcow2 d0_root.qcow2
+
+
+0.2 Run audumbla
+
+- macos$ audumbla iaarch64/portslab
+OR
+- macos$ ./audumbla.conf
+
+
+
 1 INITIAL SETUP
 ---------------
 
